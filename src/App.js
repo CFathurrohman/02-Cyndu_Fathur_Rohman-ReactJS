@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import Greeting from "./Greeting";
+import Counter from "./Counter";
+import React from "react";
+import Example from "./Example";
 
-function App() {
+//Komponen Header
+function Header(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Aplikasi React Saya</h1>
     </div>
   );
+}
+
+//Komponen Main
+function Main(){
+  return (
+    <main>
+      <h2>Selamat datang di Aplikasi React Saya!</h2>
+      <p>Ini adalah area konten utama.</p>
+    </main>
+  )
+}
+
+//Komponen Footer
+function Footer(){
+  return (
+    <p>&copy; 2025 Aplikasi React Saya</p>
+  )
+}
+
+//Komponen App yang menggunakan Header, Main, dan Footer
+function App(){
+  return (
+    <div>
+      <Header />
+      <Main />
+      <Greeting name="John" />
+      <Counter />
+      <Example />
+      <Footer />
+    </div>
+  )
 }
 
 export default App;
