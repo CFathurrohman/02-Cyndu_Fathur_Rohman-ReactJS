@@ -35,10 +35,10 @@ function App(){
   return (
     <div>
       <Header />
-      <Main />
+      {/* <Main />
       <Greeting name="John" />
       <Counter />
-      <Example />
+      <Example /> */}
       <TodoList />
       <Footer />
     </div>
