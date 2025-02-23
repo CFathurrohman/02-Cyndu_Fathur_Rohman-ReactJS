@@ -2,6 +2,7 @@ import Greeting from "./Greeting";
 import Counter from "./Counter";
 import React from "react";
 import Example from "./Example";
+import TodoList from "./Todolist";
 
 //Komponen Header
 function Header(){
@@ -38,6 +39,7 @@ function App(){
       <Greeting name="John" />
       <Counter />
       <Example />
+      <TodoList />
       <Footer />
     </div>
   )
